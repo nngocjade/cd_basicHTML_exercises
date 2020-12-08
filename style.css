@@ -1,3 +1,10 @@
-.solution {
+.solution-title {
   color: green;
+}
+
+.solution {
+  width: 30em;
+  height: fit-content;
+  padding: 1rem;
+  background-color: rgb(173, 238, 173);
 }
