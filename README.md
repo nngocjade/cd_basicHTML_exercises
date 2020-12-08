@@ -1,2 +1,3 @@
-"# cd_basicHTML_exercises" 
-"# cd_basicHTML_exercises" 
+CoderSchool Tuesday, December 8th, 2020 
+
+basic HTML excercises
