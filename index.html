@@ -10,7 +10,9 @@
     <!-- Assignment 1 - HTML comment-->
     <section id="a1">
       <h2>Assignment 1 - HTML comment</h2>
-      <h4>Comment out the second paragraph of the following HTML document</h4>
+      <h4 class="question">
+        Comment out the second paragraph of the following HTML document
+      </h4>
       <pre>
         &lt;h3&gt;In this course we'll learn:&lt;/h3&gt;
         &lt;p&gt;HTML & CSS&lt;/p&gt;
@@ -26,7 +28,8 @@
         </p>
         <pre>&lt;!-- &lt;p&gt;Python&lt;/p&gt; --&gt;</pre>
         <p>
-          But, in the browser, "Python" will completely disappear. See, below.
+          But, in the browser, "Python" will completely disappear. See example,
+          below.
         </p>
         <div class="solution">
           <h3>In this course we'll learn:</h3>
@@ -43,16 +46,20 @@
     <!-- Assignment 2 - Hyperlink 1 -->
     <section id="a2">
       <h2>Assignment 2 - Hyperlink 1</h2>
-      <h4>Create a hyperlink that leads to www.coderschool.vn</h4>
+      <h4 class="question">
+        Create a hyperlink that leads to www.coderschool.vn
+      </h4>
 
       <div class="solution-container">
         <h2 class="solution-title">Solution</h2>
         <p>Add a URL to the "href="..."" attribute like so</p>
         <pre>
-          &lt;p&gt;Check out &lt;a href="<span style="color: blue;">http://coderschool.vn</span>"&gt; coderSchool&lt;/a&gt;.&lt;/p&gt;
+          &lt;p&gt;Check out &lt;a href="<span class="solution-highlight">http://coderschool.vn</span>"&gt; coderSchool&lt;/a&gt;.&lt;/p&gt;
         </pre>
         <p>Example, below.</p>
-        <p>Check out <a href="http://coderschool.vn"> coderSchool</a>.</p>
+        <div class="solution">
+          <p>Check out <a href="http://coderschool.vn"> coderSchool</a>.</p>
+        </div>
       </div>
     </section>
 
@@ -63,19 +70,29 @@
     <!-- Assignment 3 - Hyperlink 2 -->
     <section id="a3">
       <h2>Assignment 3 - Hyperlink 2</h2>
-      <h4>
+      <h4 class="question">
         Create a hyperlink to take you to another part of the same HTML document
       </h4>
 
       <div class="solution-container">
         <h2 class="solution-title">Solution</h2>
+        <p>
+          In order to link to another section within the same html page, we need
+          to use the <br />
+          id name of the section we want to link to and add a hashtag, "#,"
+          infront of it as a value <br />
+          of the href="...." attribute of the a hyperlink that want to link it
+          to.
+        </p>
         <pre>
-          &lt;section id="a1"&gt;
-          &lt;h2&gt;Assignment 1 - HTML comment&lt;/h2&gt;
-          &lt;a&gt; href="#a1">back to assignment 1 &lt;/a&gt;
-
+          &lt;section id="<span class="solution-highlight">a1</span>"&gt;
+          &lt;h2&gt;Assignment 1 - HTML comment&lt;/h2&gt;........&lt;/section&gt;
+          <br>
+          &lt;a href="<span class="solution-highlight">#a1</span>">back to assignment 1 &lt;/a&gt;
         </pre>
-        <a href="#a1">back to assignment 1</a>
+        <div class="solution">
+          <a href="#a1">back to assignment 1</a>
+        </div>
       </div>
     </section>
 
@@ -85,21 +102,38 @@
 
     <!-- Assignment 4 - Hyperlink 3 -->
     <section id="a4">
-      <h2>Assignment 3 - Hyperlink 2</h2>
-      <h4>
+      <h2>Assignment 4 - Hyperlink 3</h2>
+      <h4 class="question">
         Create a hyperlink to take you to another part of the same HTML document
       </h4>
 
       <div class="solution-container">
         <h2 class="solution-title">Solution</h2>
-        <p>Add target="_blank" to the "a" tag</p>
         <p>
-          By clicking
-          <a href="https://www.thisiscolossal.com/" target="_blank"
-            >thisiscolossal</a
-          >
-          google chrome will create a new tab directing you to the attached link
+          Add <span class="solution-highlight">target="_blank"</span> attribute
+          to the "a" tag.
         </p>
+        <pre>
+          &lt;p&gt;
+            By clicking
+            &lt;a href="https://www.thisiscolossal.com/" <span class="solution-highlight">target="_blank"</span>
+              &gt;thisiscolossal,
+            &lt;/a&gt;
+            google chrome will create a new tab directing you to the attached
+            hyperlink.
+          &lt;/p&gt;
+        </pre>
+        <p>See example, below.</p>
+        <div class="solution">
+          <p>
+            By clicking
+            <a href="https://www.thisiscolossal.com/" target="_blank"
+              >thisiscolossal,
+            </a>
+            google chrome will create a new tab directing you to the attached
+            hyperlink.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -107,23 +141,97 @@
       -----------------------------------------------------------------------------------------------------
     </p>
     <!-- Assignment 5 - Article -->
+    <section id="a5">
+      <h2>Assignment 5 - Article</h2>
+      <h4 class="question">
+        Create an article element that has a title and a paragraph (HTML5
+        article <br />
+        element represents independent item like a blog entry in an web
+        document).
+      </h4>
+
+      <div class="solution-container">
+        <h2 class="solution-title">Solution</h2>
+        <pre>
+          &lt;article&gt;
+            &lt;h2 class="article-title">Article Title&lt;/h2&gt;
+            &lt;p class="article-paragraph"&gt;
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              architecto recusandae eveniet voluptatum ad voluptatibus aperiam
+              harum repudiandae aut nam dicta magnam saepe modi incidunt, illum
+              debitis, quidem adipisci perferendis! Exercitationem impedit neque
+              itaque harum asperiores! Assumenda eius perspiciatis quia? Fugit
+              praesentium quasi, minima neque illum doloribus ducimus
+              necessitatibus saepe?
+            &lt;/p&gt;
+          &lt;/article&gt;
+        </pre>
+        <div class="solution">
+          <article>
+            <h2 class="article-title">Article Title</h2>
+            <p class="article-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              architecto recusandae eveniet voluptatum ad voluptatibus aperiam
+              harum repudiandae aut nam dicta magnam saepe modi incidunt, illum
+              debitis, quidem adipisci perferendis! Exercitationem impedit neque
+              itaque harum asperiores! Assumenda eius perspiciatis quia? Fugit
+              praesentium quasi, minima neque illum doloribus ducimus
+              necessitatibus saepe?
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <p>
       -----------------------------------------------------------------------------------------------------
     </p>
 
     <!-- Assignment 6 - Audio -->
+    <section id="a6">
+      <h2>Assignment 6 - Audio</h2>
+      <h4 class="question">
+        Embed an audio clip into a web page (Ref:
+        https://htmlreference.io/element/audio/)
+      </h4>
+      <div class="solution-container">
+        <h2 class="solution-title">Solution</h2>
+        <pre></pre>
+        <p>See example, below.</p>
+        <div class="solution">
+          <audio src="assets/Hal.mp3" controls></audio>
+        </div>
+      </div>
+    </section>
 
     <p>
       -----------------------------------------------------------------------------------------------------
     </p>
 
     <!-- Assignment 7 - Video -->
+    <section id="a6">
+      <h2></h2>
+      <h4 class="question"></h4>
+      <div class="solution-container">
+        <h2 class="solution-title">Solution</h2>
+        <pre></pre>
+        <div class="solution"></div>
+      </div>
+    </section>
 
     <p>
       -----------------------------------------------------------------------------------------------------
     </p>
 
     <!-- Assignment 8 - Image -->
+    <section id="a6">
+      <h2></h2>
+      <h4 class="question"></h4>
+      <div class="solution-container">
+        <h2 class="solution-title">Solution</h2>
+        <pre></pre>
+        <div class="solution"></div>
+      </div>
+    </section>
   </body>
 </html>

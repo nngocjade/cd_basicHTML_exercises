@@ -1,10 +1,17 @@
+.question {
+  color: blue;
+}
 .solution-title {
   color: green;
 }
 
 .solution {
-  width: 30em;
+  width: 32em;
   height: fit-content;
   padding: 1rem;
   background-color: rgb(173, 238, 173);
+}
+
+.solution-highlight {
+  color: rgb(16, 165, 16);
 }
