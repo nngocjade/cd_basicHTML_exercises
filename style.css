@@ -1,3 +1,15 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+section {
+  width: 60em;
+  height: fit-content;
+  margin: 0 auto;
+}
+
 .question {
   color: blue;
 }
@@ -5,8 +17,12 @@
   color: green;
 }
 
+.solution-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .solution {
-  width: 35em;
   height: fit-content;
   padding: 1rem;
   background-color: rgb(173, 238, 173);
@@ -23,4 +39,36 @@
 
 ul {
   list-style-type: none;
+}
+
+#a21 ul {
+  list-style-type: disc;
+  color: darkblue;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-areas: "label" 1fr "input" 2fr;
+}
+
+.col1 {
+  grid-column: 1/2;
+}
+
+.col2 {
+  grid-column: 2/2;
+}
+.form-title {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+#confirmBtn {
+  margin-top: 0.5rem;
 }
